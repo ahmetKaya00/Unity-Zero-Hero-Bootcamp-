@@ -13,7 +13,7 @@ public class AnimationTrigger : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && Mermi._cephane > 0)
         {
             AudioSource silahSesi = GetComponent<AudioSource>();
             silahSesi.Play();

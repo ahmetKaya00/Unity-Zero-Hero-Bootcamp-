@@ -9,8 +9,9 @@ public class AtesEtme : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && Mermi._cephane > 0)
         {
+            Mermi._cephane--;
             RaycastHit Atis;
 
             if(Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward), out Atis))

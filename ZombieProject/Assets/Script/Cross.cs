@@ -17,7 +17,7 @@ public class Cross : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && Mermi._cephane > 0)
         {
             foreach(GameObject hedef in Hedefler)
             {
